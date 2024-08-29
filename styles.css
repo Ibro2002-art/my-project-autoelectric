@@ -115,6 +115,7 @@ header {
 }
 
 .call-button {
+	
     background-color: #007bff;
 	
     
@@ -431,4 +432,44 @@ header {
         width: 100px; /* Уменьшаем ширину для мобильных устройств */
         height: auto;
     }
+}
+.call-service {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Лёгкий фон для выделения секции */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста и кнопки */
+}
+
+.call-service h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.call-service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+.call-service .call-button {
+	display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 2;
+    background-color: #007bff;
+}
+
+.call-service .call-button:hover {
+    background-color: #45a049; /* Изменение цвета при наведении */
 }
