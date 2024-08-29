@@ -373,9 +373,9 @@ header {
 }
 
 .about-service h2 {
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center; /* Выравниваем заголовок по центру */
 }
 
