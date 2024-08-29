@@ -1,134 +1,475 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автоэлектрик</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="img/auto_icon.webp" alt="Логотип Автоэлектрик" class="logo">
-            <div class="header-title">Автоэлектрик</div>
-        </div>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section class="hero">
-            <h1>Автоэлектрик в Алматы на выезд</h1>
-            <p>Выезд в течение 15 минут. Гарантия на выполненную работу.</p>
-            <a href="tel:+77470537155" class="call-buttonss">Позвонить +77470537155</a>
-            <a href="https://wa.me/77771257954" class="whatsapp-button">Ватсап</a>
-        </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
 
-        <section class="services">
-            <h2>Наши услуги</h2>
-            <div class="service">
-                <div class="service-icon">
-                    <img src="img/viezd.webp" alt="Выезд" />
-                </div>
-                <p>Выезд автоэлектрика к вашему автомобилю</p>
-                <a href="tel:+77470537155" class="call-button">Позвонить</a>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <img src="img/avtodiagnostika.webp" alt="Компьютерная диагностика авто" />
-                </div>
-                <p>Компьютерная диагностика авто в Алматы</p>
-                <a href="tel:+77470537155" class="call-button">Позвонить</a>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <img src="img/sad.webp" alt="Работа в любых условиях" />
-                </div>
-                <p>Ремонт и обслуживание автомобиля в любых условиях</p>
-                <a href="tel:+77470537155" class="call-button">Позвонить</a>
-            </div>
-        </section>
+/* Header styling */
+header {
+    background-color: #1c1e21;
+    padding: 20px;
+    text-align: center;
+}
 
-		<section class="about-service">
-    		<h2>Вы можете вызвать профессионального автоэлектрика в любое место внутри города!</h2>
-				<p>		   Наши специалисты готовы предложить широкий спектр услуг по диагностике, ремонту и замене элементов электрической системы автомобиля. Вот основные виды работ, которые мы выполняем:</p>
-			<br>
-			
-    			<p>1. Диагностика электрооборудования. Проверка состояния всех электрических цепей и компонентов, включая аккумулятор, генератор, стартер и электропроводку Современная компьютерная диагностика позволяет точно определить причину неисправности и выбрать оптимальный способ её устранения.</p>
-			<br>
-				<p>
-					2. Ремонт генератора и стартера. Эти элементы электрической системы автомобиля часто выходят из строя. Мы производим как мелкий, так и капитальный ремонт генераторов и стартеров с использованием оригинальных запчастей.</p>
-				<p>
-			<br>
-			3. Ремонт автономных отопителей. Мы выполняем диагностику и ремонт автономных отопителей различных марок. Работаем как с легковыми автомобилями, так и с грузовыми машинами.</p>
-		</section>
-		
-		<section class="call-service">
-    		<h2>Автоэлектрик на выезд?</h2>
-    			<p>Вызвать автоэлектрика в Алматы очень просто. Достаточно позвонить нам по телефону или оставить заявку на сайте. Мы работаем круглосуточно, без выходных и праздников. Оператор примет ваш заказ и передаст его ближайшему свободному специалисту. Автоэлектрик приедет к вам в течение 30 минут и приступит к работе сразу после диагностики.</p>
-    				<a href="tel:+77470537155" class="call-button">Позвонить</a>
-		</section>
+.header-title {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+}
 
-		<section class="car-brands">
-    <h2>Марка автомобилей, с которыми мы работаем</h2>
-    <table class="brands-table">
-        <tr>
-            <td><img src="img/brand1.png" alt="Марка 1"></td>
-            <td><img src="img/brand2.png" alt="Марка 2"></td>
-            <td><img src="img/brand3.png" alt="Марка 3"></td>
-        </tr>
-        <tr>
-            <td><img src="img/brand4.png" alt="Марка 4"></td>
-            <td><img src="img/brand5.png" alt="Марка 5"></td>
-            <td><img src="img/brand6.png" alt="Марка 6"></td>
-        </tr>
-        <tr>
-            <td><img src="img/brand7.png" alt="Марка 7"></td>
-            <td><img src="img/brand8.png" alt="Марка 8"></td>
-            <td><img src="img/brand9.png" alt="Марка 9"></td>
-        </tr>
-        <tr>
-            <td><img src="img/brand10.png" alt="Марка 10"></td>
-            <td><img src="img/brand11.png" alt="Марка 11"></td>
-            <td><img src="img/brand12.png" alt="Марка 12"></td>
-        </tr>
-        <tr>
-            <td><img src="img/brand13.png" alt="Марка 13"></td>
-            <td><img src="img/brand14.png" alt="Марка 14"></td>
-            <td><img src="img/brand15.png" alt="Марка 15"></td>
-        </tr>
+.hero {
+    background-image: url('img/i.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
-    </table>
-</section>
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
 
-		
-        <section class="testimonials">
-            <h2>Отзывы клиентов</h2>
-            <div class="testimonial">
-                <p>"Отличный сервис! Быстро приехали и починили машину на месте. Рекомендую!"</p>
-                <span>- Алексей</span>
-            </div>
-            <div class="testimonial">
-                <p>"Профессиональный подход и качественная работа. Очень доволен результатом!"</p>
-                <span>- Мария</span>
-            </div>
-            <div class="testimonial">
-                <p>"Уже несколько раз обращался за помощью, всегда всё на высшем уровне."</p>
-                <span>- Дмитрий</span>
-            </div>
-        </section>
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
 
-        <section class="map">
-            <h2 class="map-title">Наша карта</h2>
-            <div class="map-block">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117514.71651410083!2d76.85124829384343!3d43.23894932753124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836eb20d91f8db%3A0xb5a8c8de8f1f6470!2sAlmaty%2C%20Kazakhstan!5e0!3m2!1sen!2s!4v1643630030348!5m2!1sen!2s"
-                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 123, 255, 0.8), 0 0 40px rgba(0, 123, 255, 0.6), 0 0 50px rgba(0, 123, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.2);
+    }
+}
+
+@keyframes whatsapp-glow {
+    0% {
+        box-shadow: 0 0 10px rgba(37, 211, 102, 0.6), 0 0 20px rgba(37, 211, 102, 0.4), 0 0 30px rgba(37, 211, 102, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(37, 211, 102, 0.8), 0 0 40px rgba(37, 211, 102, 0.6), 0 0 50px rgba(37, 211, 102, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(37, 211, 102, 0.6), 0 0 20px rgba(37, 211, 102, 0.4), 0 0 30px rgba(37, 211, 102, 0.2);
+    }
+}
+
+.call-button, .whatsapp-button {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+.call-buttonss {
+	display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 2;
+	background-color: #007bff;
+	animation: glow 2s infinite ease-in-out;
+}
+
+.call-button {
+	
+    background-color: #007bff;
+	
+    
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+	animation: whatsapp-glow 2s infinite ease-in-out;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+.services {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Это обеспечит, что изображение не выйдет за пределы круга */
+}
+
+.service-icon img {
+    width: 100%; /* Изображение будет подстраиваться под размер круга */
+    height: 100%;
+    object-fit: cover; /* Изображение будет обрезаться, чтобы заполнить круг */
+}
 
 
-    </main>
+.service:nth-child(1) .service-icon {
+    background-color: #3498db;
+}
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+.service:nth-child(2) .service-icon {
+    background-color: #2ecc71;
+}
+
+.service:nth-child(3) .service-icon {
+    background-color: #f1c40f;
+}
+
+.service p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .call-button, .whatsapp-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 20px 10px;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .call-button, .whatsapp-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .service-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .services {
+        gap: 10px;
+    }
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 60px; /* Измените размер по вашему желанию */
+    height: auto;
+    margin-right: 10px; /* Отступ между логотипом и заголовком */
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.map {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.map-block {
+    display: flex;
+    justify-content: center;
+}
+
+.map-block iframe {
+    width: 100%;
+    max-width: 600px; /* Устанавливает максимальную ширину для iframe */
+    height: 400px;
+    border: 0;
+    border-radius: 8px; /* Добавляет скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для красоты */
+}
+
+@media (max-width: 768px) {
+    .map-block iframe {
+        height: 300px; /* Уменьшает высоту на мобильных устройствах */
+    }
+}
+/* Секция с услугами */
+.services h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Секция "Что мы чиним" */
+.repairs {
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.repairs h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.repair-list {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+.repair-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Секция отзывов клиентов */
+.testimonials {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+}
+.about-service {
+    padding: 30px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Чтобы контейнер занимал всю доступную ширину */
+}
+
+.about-service h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Выравниваем заголовок по центру */
+}
+
+.about-service p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6; /* Высота строки для лучшей читаемости */
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin: 0; /* Убираем отступы вокруг текста */
+}
+
+.car-brands {
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.car-brands h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+	text-align: center;
+}
+
+.brands-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.brands-table td {
+    padding: 3px;
+    text-align: center;
+}
+
+.brands-table img {
+    width: 138px;
+    height: 100px;
+    object-fit: contain; /* Сохраняет пропорции изображений */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.brands-table img:hover {
+    transform: scale(1.05); /* Легкий эффект увеличения при наведении */
+}
+
+@media (max-width: 768px) {
+    .brands-table img {
+        width: 50px; /* Уменьшаем ширину для мобильных устройств */
+        height: auto;
+    }
+}
+.call-service {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Лёгкий фон для выделения секции */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста и кнопки */
+}
+
+.call-service h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.call-service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+.call-service .call-button {
+	display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 2;
+    background-color: #007bff;
+}
+
+.call-service .call-button:hover {
+    background-color: #45a049; /* Изменение цвета при наведении */
+}
