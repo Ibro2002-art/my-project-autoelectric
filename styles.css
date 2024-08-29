@@ -406,12 +406,15 @@ header {
 
 .brands-table {
     width: 100%;
-    border-collapse: collapse;
+    max-width: 100%; /* Гарантирует, что таблица не выйдет за пределы контейнера */
+    border-collapse: collapse; /* Убирает пробелы между ячейками таблицы */
+    table-layout: fixed; /* Устанавливает фиксированную ширину колонок */
 }
 
 .brands-table td {
     padding: 3px;
     text-align: center;
+    overflow: hidden; /* Скрывает любые элементы, выходящие за пределы ячейки */
 }
 
 .brands-table img {
@@ -428,11 +431,24 @@ header {
 }
 
 @media (max-width: 768px) {
+    .brands-table {
+        display: flex;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новые строки */
+        justify-content: center; /* Центрирует элементы в пределах контейнера */
+    }
+
+    .brands-table td {
+        flex: 1 0 33%; /* Устанавливает элементы по 3 в строке */
+        max-width: 33%; /* Ограничивает максимальную ширину элементов */
+        padding: 5px;
+    }
+
     .brands-table img {
-        width: 40px; /* Уменьшаем ширину для мобильных устройств */
-        height: auto;
+        width: 80px; /* Настройка ширины изображений для мобильных устройств */
+        height: auto; /* Сохраняет пропорции изображений */
     }
 }
+
 .call-service {
     padding: 20px;
     margin: 20px 0;
