@@ -405,17 +405,17 @@ header {
 }
 
 .brands-table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
 }
 
 .brands-table td {
-    padding: 0px;
+    padding: 3px;
     text-align: center;
 }
 
 .brands-table img {
-    width: 120px;
+    width: 138px;
     height: 100px;
     object-fit: contain; /* Сохраняет пропорции изображений */
     border-radius: 8px;
@@ -429,7 +429,7 @@ header {
 
 @media (max-width: 768px) {
     .brands-table img {
-        width: auto; /* Уменьшаем ширину для мобильных устройств */
+        width: 40px; /* Уменьшаем ширину для мобильных устройств */
         height: auto;
     }
 }
